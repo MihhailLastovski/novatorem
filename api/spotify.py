@@ -22,6 +22,9 @@ FALLBACK_THEME = "spotify.html.j2"
 
 REFRESH_TOKEN_URL = "https://accounts.spotify.com/api/token"
 NOW_PLAYING_URL = "https://api.spotify.com/v1/me/player/currently-playing"
+RECENTLY_PLAYING_URL = (	
+    "https://api.spotify.com/v1/tracks/2tnZSV3SWVGWw6bYqcmOD4"	
+)
 
 app = Flask(__name__)
 
