@@ -6,17 +6,6 @@
                     display: flex;
                 }
                 
-                .scan-code {
-                    transform-origin: top right;
-                    transform: rotate(270deg) translateY(-120px);
-                    width: 120px;
-                    height: 100%;
-                    border-radius: 5px;
-                    {% if theme == 'dark' %}
-                        filter: invert(100%);
-                    {% endif %}
-                }
-                
                 .currentStatus {
                     float: left;
                     color: #f7f7f7;
@@ -126,7 +115,6 @@
             <!-- <div class="currentStatus" color="white">{{status}}</div> -->
 
             <div class="main">
-                    <img class="scan-code" src="data:image/png;base64, {{scan_code}}" alt="Scan Code" />
                 <a class="art" href="{}" target="_blank">
                     <center>
                         <img src="data:image/png;base64, {{image}}" class="cover" />
