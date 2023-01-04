@@ -5,6 +5,18 @@
                 .main {
                     display: flex;
                 }
+                
+                .scan-code {
+                    transform-origin: top right;
+                    transform: rotate(270deg) translateY(-120px);
+                    width: 120px;
+                    height: 100%;
+                    border-radius: 5px;
+                    {% if theme == 'dark' %}
+                        filter: invert(100%);
+                    {% endif %}
+                }
+                
                 .currentStatus {
                     float: left;
                     color: #f7f7f7;
